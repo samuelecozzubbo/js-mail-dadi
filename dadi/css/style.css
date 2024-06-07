@@ -20,3 +20,14 @@ body{
     text-align: center;
     gap: 20px;
 }
+
+button{
+    background-color: rgb(203, 203, 203);
+    padding: 7px;
+    border-radius: 8px;
+}
+
+img{
+    width: 100px;
+    border-radius: 15px;
+}

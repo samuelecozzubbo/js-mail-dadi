@@ -14,12 +14,12 @@ myBtn.addEventListener("click",
 
         //Stampa userDice
         const diceElement = document.getElementById("userDice");
-        let userDice = `<span>Your Dice <br>${myNumber}</span>`;
+        let userDice = `<span>Your Dice<br><img src="img/${myNumber}.svg"></span>`;
         diceElement.innerHTML = userDice;
 
         //Stampa botDice
         const botdiceElement = document.getElementById("botDice");
-        let botDice = `<span>Bot Dice <br>${botNumber}</span>`;
+        let botDice = `<span>Bot Dice<br><img src="img/${botNumber}.svg"></span>`;
         botdiceElement.innerHTML = botDice;
 
         //Selezione vincitore
