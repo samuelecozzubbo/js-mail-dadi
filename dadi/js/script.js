@@ -21,5 +21,16 @@ myBtn.addEventListener("click",
         const botdiceElement = document.getElementById("botDice");
         let botDice = `<span>Bot Dice <br>${botNumber}</span>`;
         botdiceElement.innerHTML = botDice;
+
+        //Selezione vincitore
+        if(myNumber > botNumber) {
+            message = "HAI VINTO!";
+        } else if (myNumber < botNumber) {
+            message = "HAI PERSO!";
+        } else {
+            message = "PAREGGIO";
+        }
+
+        document.getElementById("winner").innerHTML = message;
     }
 )
