@@ -12,3 +12,11 @@ body{
     color: rgb(129, 56, 255);
     font-size: x-large;
 }
+
+.gamerow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}

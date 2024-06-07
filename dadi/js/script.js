@@ -2,6 +2,8 @@
 
 const myBtn = document.querySelector("button");
 
+
+
 //Evento click
 myBtn.addEventListener("click",
     function() {
@@ -9,5 +11,15 @@ myBtn.addEventListener("click",
         const botNumber = Math.floor(Math.random() * 6) + 1;
 
         console.log("Il tuo numero è",myNumber,"Il numero del pc è",botNumber);
+
+        //Stampa userDice
+        const diceElement = document.getElementById("userDice");
+        let userDice = `<span>Your Dice <br>${myNumber}</span>`;
+        diceElement.innerHTML = userDice;
+
+        //Stampa botDice
+        const botdiceElement = document.getElementById("botDice");
+        let botDice = `<span>Bot Dice <br>${botNumber}</span>`;
+        botdiceElement.innerHTML = botDice;
     }
 )
